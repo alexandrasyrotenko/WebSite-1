@@ -10,91 +10,137 @@ body{
   box-sizing: border-box;
 }
 
-.header{
-  display: flex;
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1000;
-  background-color: #188ae2;
-  width: 100%;
-  height: 80px;
+
+#sidebar{
+  position: relative;
+  width: 290px;
+  height: 100%;
+  background: #414042;
+  left: -290px;
+
+  transition: 300ms;
 }
 
-.logo{
-  position: absolute;
+#sidebar.active{
+  left: 0px;
+
+}
+
+#sidebar.active .intro{
+  width: 290px;
+
+}
+
+
+#sidebar .intro{
+  width: 372px;
+  height: 80px;
+  background: #313131;
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  background-color: #313131;
 
-  width: 290px;
-  height: 80px;
-  align-items: center;
+  transition: 300ms;
 }
-.name__site{
 
+
+
+
+#sidebar .intro .name{
   margin-left: 30px;
-  vertical-align: middle;
   font-size: 23;
 }
 
-.menu{
+#sidebar .intro .toggle-btn{
+
   margin-right: 20px;
+  background: #313131;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 10px;
+
 }
 
+#sidebar .intro .toggle-btn span{
+  display: block;
+  width: 26px;
+  height: 4px;
+  background-color: #fff;
+  margin: 4px 0;
+}
 
-.main__head{
-  align-items: center;
+#sidebar .intro .toggle-btn:hover{
+  background: #fff;
+
+}
+#sidebar .intro .toggle-btn:hover span{
+  background: #313131;
+
+}
+
+#sidebar .item,
+  .item_first,
+  .item_last,
+  .support{
+  position: relative;
   display: flex;
   justify-content: space-between;
-  margin-left: 30px;
-  margin-right: 30px;
-  margin-left: 290px;
-  width: 100%;
-  height: 80px;
-}
-
-
-.search__frame{
   align-items: center;
+  height: 50px;
+
+  margin-bottom: 1px;
+}
+
+#sidebar .item .name,
+  .item_last .name,
+  .item_first .name,
+  .support .name{
   display: flex;
-  justify-content: space-between;
-  background-color: #0b76c9;
-  width: 215px;
-  height: 36px;
-  border-radius: 20px;
+
   margin-left: 30px;
 }
 
-.search__text{
-  color: #95c0e2;
+#sidebar .item .name .text,
+  .item_last .name .text,
+  .item_first .name .text,
+  .support .name .text{
   margin-left: 20px;
 }
 
-.search__btn{
-  margin-right: 20px;
-}
-
-.inf{
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  text-align: right;
-  width: 300px;
-  height: 80px;
+#sidebar .item .arrow,
+  .item_first .arrow,
+  .item_last .arrow{
   margin-right: 30px;
+  font-size: 20;
+  font-stretch: condensed;
 }
 
-.profile__image{
-  margin-left: 30px;
+#sidebar .item_last:after{
+
+
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #313131;
+  position: absolute;
+  top: 70px;
+  left: 0;
 }
 
-.prof__name{
-
+#sidebar .item_first{
+  background: #188ae2;
 }
 
-.prof__status{
-  font-size: 10px;
-  text-align: left;
+#sidebar .support{
+  margin-top: 40px;
 }
+
+
+
+
+/*
+align-items: center;
+display: flex;
+justify-content: space-between;
+*/
