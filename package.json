@@ -1,0 +1,23 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OlegMar1/WebSite.git"
+  },
+  "author": "Oleshko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OlegMar1/WebSite/issues"
+  },
+  "homepage": "https://github.com/OlegMar1/WebSite#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.2"
+  }
+}
