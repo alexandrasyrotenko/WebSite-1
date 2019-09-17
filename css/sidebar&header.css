@@ -4,10 +4,14 @@ body{
   font-family: 'Lato', sans-serif;
   color: #fff;
   background: #edf0f5;
-
-
-
+  height: 100%;
+  overflow: hidden;
 }
+html{
+  height: 100%;
+  overflow: hidden;
+}
+
 
 *,*:before,*:after{
   box-sizing: border-box;
@@ -167,7 +171,11 @@ body{
 }
 
 #head {
-  margin-left: 82px;
+  position: absolute;
+  left: 82px;
+  /* margin-left: 82px; */
+  width: calc(100% - 82px);
+  min-width: 260px;
 
 
   min-height: 80px;
@@ -181,10 +189,14 @@ body{
 }
 
 #head.head-with-sidebar {
-  margin-left: 290px;
-  width: calc(100%-290px);
+  /* width: 100%; */
+  left: 290px;
+  width: calc(100% - 208px - 82px);
+  right: 0;
 
 }
+
+
 
 
 
@@ -204,7 +216,7 @@ input::-webkit-input-placeholder {
   font-weight: 100;
 }
 
-#text{
+#head #search #text{
   margin-left: 20px;
   width: 150px;
   border: none;

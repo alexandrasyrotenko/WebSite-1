@@ -1,0 +1,95 @@
+#main .right_sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#main .right_sidebar .new_massage {
+  display: flex;
+  flex-direction: column;
+}
+
+#main .right_sidebar .new_massage .title {
+  width: 190px;
+  color: #000;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+#main .right_sidebar .new_massage .people {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+#main .right_sidebar .new_massage .people .photo {
+  font-size: 34;
+  color: #000;
+}
+
+#main .right_sidebar .new_massage .people .information {
+  margin-left: 15px;
+}
+
+#main .right_sidebar .new_massage .people .information .name {
+  color: #000;
+}
+
+#main .right_sidebar .new_massage .people .information .status {
+  color: #000;
+  font-size: 12;
+  font-weight: 300;
+}
+
+#main .right_sidebar .chat_line {
+  display: flex;
+  flex-direction: column;
+}
+
+#main .right_sidebar .chat_line .title {
+  width: 190px;
+  color: #000;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+#main .right_sidebar .chat_line .user {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#main .right_sidebar .chat_line .user .people {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+#main .right_sidebar .chat_line .user .people .photo {
+  font-size: 34;
+  color: #000;
+}
+
+#main .right_sidebar .chat_line .user .people .information {
+  margin-left: 15px;
+}
+
+#main .right_sidebar .chat_line .user .people .information .name {
+  color: #000;
+}
+
+#main .right_sidebar .chat_line .user .people .information .status {
+  color: #000;
+  font-size: 12;
+  font-weight: 300;
+}
+
+#main .right_sidebar .chat_line .user .circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background: green;
+}

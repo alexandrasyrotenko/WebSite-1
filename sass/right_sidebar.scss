@@ -1,0 +1,91 @@
+#main{
+
+  .right_sidebar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .new_massage{
+      display: flex;
+      flex-direction: column;
+      // margin-bottom: 50px;
+      .title{
+        width: 190px;
+        color: #000;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-weight: 600;
+      }
+      .people{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 22px;
+
+        .photo{
+          font-size: 34;
+          color: #000;
+        }
+
+        .information{
+          margin-left: 15px;
+          .name{
+            color: #000;
+          }
+          .status{
+            color: #000;
+            font-size: 12;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+
+    .chat_line{
+      display: flex;
+      flex-direction: column;
+      .title{
+        width: 190px;
+        color: #000;
+        // margin-top: 30px;
+        margin-bottom: 20px;
+        font-weight: 600;
+      }
+      .user{
+        display: flex;
+        justify-content: space-between;
+        align-items:flex-start;
+
+        .people{
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          margin-bottom: 22px;
+
+          .photo{
+            font-size: 34;
+            color: #000;
+          }
+
+          .information{
+            margin-left: 15px;
+            .name{
+              color: #000;
+            }
+            .status{
+              color: #000;
+              font-size: 12;
+              font-weight: 300;
+            }
+          }
+        }
+        .circle{
+          width: 10px;
+          height: 10px;
+          border-radius: 10px;
+          background: green;
+        }
+      }
+    }
+  }
+}
