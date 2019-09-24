@@ -7,11 +7,12 @@
   top: 80px;
   width: 100%;
   min-height: calc(100% - 80px);
-  background: #a03;
+  background: #fff;
   transition: 300ms;
 }
 
 #main .content {
+  overflow: auto;
   width: calc(100% - 240px);
   background: #edf0f5;
 }

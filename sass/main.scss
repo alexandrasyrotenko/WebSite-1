@@ -1,4 +1,5 @@
 #main{
+  // overflow: auto;
   display: flex;
   justify-content: space-between;
   position: absolute;
@@ -7,10 +8,12 @@
   top: 80px;
   width: 100%;
   min-height: calc(100% - 80px);
-  background: #a03;
+  // max-height: calc(100% - 80px);
+  background: #fff;
   transition: 300ms;
 
   .content{
+    overflow:auto;
     width: calc(100% - 240px);
     background: #edf0f5;
   }
@@ -31,6 +34,8 @@
     // min-width: 240px;
   }
 }
+
+
 
 
 @media(max-width: 800px){

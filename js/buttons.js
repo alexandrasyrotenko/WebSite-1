@@ -5,6 +5,7 @@ function openMenu(){
 
 }
 
-function openPoints(){
-  document.getElementByClassName("item").classList.toggle('activated');
+function openPoints(e){
+  // console.log(e.target.querySelector('.image i'))
+  e.target.classList.toggle('activated');
 }

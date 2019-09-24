@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="css/sidebar&header.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/right_sidebar.css">
+    <link rel="stylesheet" href="css/content.css">
     <link href="https://fonts.googleapis.com/css?
     family=Lato:300,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
@@ -14,6 +15,7 @@
   </head>
 
   <body>
+<!-- LEFT SIDEBAR -->
     <div id="sidebar">
       <div class="intro">
         <div class="name">
@@ -26,8 +28,7 @@
         </div>
       </div>
 
-
-      <div class="item_first" onclick="openPoints()">
+      <div class="item_first" onclick="openPoints(event)">
         <div class="name">
           <div class="image">
             <i class="home icon"></i>
@@ -41,7 +42,7 @@
         </div>
       </div>
 
-      <div class="item" onclick="openPoints()">
+      <div class="item" onclick="openPoints(event)">
         <div class="name">
           <div class="image">
             <i class="th icon"></i>
@@ -55,7 +56,7 @@
         </div>
       </div>
 
-      <div class="item" onclick="openPoints()">
+      <div class="item" onclick="openPoints(event)">
         <div class="name">
           <div class="image">
             <i class="code icon"></i>
@@ -69,7 +70,7 @@
         </div>
       </div>
 
-      <div class="item" onclick="openPoints()">
+      <div class="item" onclick="openPoints(event)">
         <div class="name">
           <div class="image">
             <i class="desktop icon"></i>
@@ -83,7 +84,7 @@
         </div>
       </div>
 
-      <div class="item" onclick="openPoints()">
+      <div class="item" onclick="openPoints(event)">
         <div class="name">
           <div class="image">
             <i class="pencil alternate icon"></i>
@@ -108,7 +109,7 @@
         </div>
       </div>
 
-      <div class="item" onclick="openPoints()">
+      <div class="item" onclick="openPoints(event)">
         <div class="name">
           <div class="image">
             <i class="table icon"></i>
@@ -133,7 +134,7 @@
         </div>
       </div>
 
-      <div class="item_last" onclick="openPoints()">
+      <div class="item_last" onclick="openPoints(event)">
         <div class="name">
           <div class="image">
             <i class="map outline icon"></i>
@@ -199,6 +200,71 @@
 
     <div id="main">
       <div class="content">
+
+
+
+        <div class="summary">
+
+          <div class="user_status">
+            <div class="title">
+              USER STATUS
+            </div>
+            <div class="data">
+              <div class="number">
+                5,100
+              </div>
+              <div class="time">
+                This Week
+              </div>
+            </div>
+            <div class="rectangle">
+              <div class="rectangle_white">
+
+              </div>
+            </div>
+          </div>
+
+          <div class="sales">
+            <div class="title">
+              SALES
+            </div>
+            <div class="data">
+              <div class="number">
+                9,180
+              </div>
+              <div class="time">
+                This Month
+              </div>
+            </div>
+            <div class="rectangle">
+              <div class="rectangle_white">
+
+              </div>
+            </div>
+          </div>
+
+          <div class="page_views">
+            <div class="title">
+              PAGE VIEWS
+            </div>
+            <div class="data">
+              <div class="number">
+                91,230
+              </div>
+              <div class="time">
+                This Month
+              </div>
+            </div>
+            <div class="rectangle">
+              <div class="rectangle_white">
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
 
       </div>
 
@@ -375,13 +441,8 @@
 
       </div>
     </div>
-
-
-
-    <script src="js/buttons.js"></script>
-
   </body>
 
-
+<script src="js/buttons.js"></script>
 
 </html>

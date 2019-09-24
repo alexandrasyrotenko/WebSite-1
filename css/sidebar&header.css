@@ -5,11 +5,11 @@ body{
   color: #fff;
   background: #edf0f5;
   height: 100%;
-  overflow: hidden;
+  overflow: auto;
 }
 html{
   height: 100%;
-  overflow: hidden;
+  overflow: auto;
 }
 
 
@@ -20,12 +20,14 @@ html{
 
 
 #sidebar{
+  /* display: flex; */
   position: absolute;
   width: 290px;
 
   min-height: 100%;
   background: #414042;
   top:0;
+
   left: -290px;
 
   transition: 300ms;
@@ -137,8 +139,6 @@ html{
 }
 
 #sidebar .item_last:after{
-
-
   content: "";
   display: block;
   width: 100%;
@@ -167,7 +167,9 @@ html{
 #sidebar .item_first.activated .arrow,
 #sidebar .item.activated .arrow,
 #sidebar .item_last.activated .arrow{
+
   transform: rotate(90deg);
+  /* transform: rotate(90deg); */
 }
 
 #head {
