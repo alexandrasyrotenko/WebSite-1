@@ -1,3 +1,7 @@
+$red: #ff5b5b;
+$green: #10c469;
+$blue: #188ae2;
+$bg-white: #f2f5f8;
 #main{
   .content{
     .summary{
@@ -6,10 +10,10 @@
 
       .user_status{
         flex: 1;
-        margin-left: 18px;
+        margin-left: 30px;
         margin-right: 9px;
         height: 100px;
-        background: #188ae2;
+        background: $blue;
         .title{
           margin-left: 35px;
           margin-top: 17px;
@@ -51,7 +55,7 @@
         margin-left: 9px;
         margin-right: 9px;
         height: 100px;
-        background: #ff5b5b;
+        background: $red;
         .title{
           margin-left: 35px;
           margin-top: 17px;
@@ -91,9 +95,9 @@
       .page_views{
         flex: 1;
         margin-left: 9px;
-        margin-right: 18px;
+        margin-right: 30px;
         height: 100px;
-        background: #10c469;
+        background: $green;
         .title{
           margin-left: 35px;
           margin-top: 17px;
@@ -126,6 +130,258 @@
             height: 5px;
             background: #fff;
           }
+        }
+      }
+    }
+  }
+}
+
+
+#main{
+  .content{
+    .graph_block{
+      display: flex;
+      height: 400px;
+
+      margin-left: 30px;
+      margin-right: 30px;
+      margin-top: 20px;
+      margin-bottom: 18px;
+      .visitors{
+        flex: 2;
+        margin-right: 9px;
+        background: $bg-white;
+        width: calc(100%);
+        padding-left: 35px;
+        padding-top: 35px;
+        padding-right: 35px;
+        .title{
+          color: #000;
+          margin-bottom: 40px;
+        }
+        .graph{
+          height: 280px;
+          width: 100%;
+          background: $red;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 50;
+          color: #fff;
+        }
+      }
+      .events_weather{
+        margin-left: 9px;
+        flex: 1;
+
+
+        .events{
+          height: 191px;
+          margin-bottom: 18px;
+          background: $bg-white;
+          padding-left: 36px;
+          padding-top: 30px;
+          padding-right: 36px;
+          .title{
+            color: #000;
+            font-weight: 700;
+          }
+          .item {
+            height: 34px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: solid 1px #cbcbcc;
+            .text{
+              color: #000;
+            }
+            .number_1{
+              display: flex;
+              justify-content: center;
+              border-radius: 3px;
+              width: 19px;
+              height: 19px;
+              background: $red;
+            }
+            .number_2{
+              display: flex;
+              justify-content: center;
+              border-radius: 3px;
+              width: 19px;
+              height: 19px;
+              background: $green;
+            }
+          }
+          .item_last{
+            height: 34px;
+            border-bottom: solid 1px #000;
+
+            .text{
+              color: #cbcbcc;
+            }
+          }
+        }
+
+        .weather{
+          height: 191px;
+          background: $blue;
+          padding-left: 36px;
+          padding-right: 31px;
+          padding-top: 30px;
+
+          .icon{
+            font-size: 30;
+            display: flex;
+            justify-content: flex-end;
+          }
+          .day{
+            display: flex;
+            justify-content: flex-end;
+          }
+          .date{
+            display: flex;
+            justify-content: flex-end;
+          }
+          .temperature{
+            display: flex;
+            justify-content: flex-start;
+            font-size: 20;
+            margin-top: 30px;
+          }
+          .city{
+            display: flex;
+            justify-content: flex-start;
+          }
+        }
+      }
+    }
+  }
+}
+
+#main{
+  .content{
+    .top_stores_order_stats{
+      display: flex;
+      height: 300px;
+      margin-bottom: 18px;
+
+      .top_stores{
+        flex: 1;
+        margin-left: 30px;
+        margin-right: 18px;
+        background: $bg-white;
+        padding-left: 35px;
+        padding-right: 31px;
+        padding-top: 30px;
+        .title{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .text{
+            color: #000;
+
+          }
+          .btn{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 69px;
+            height: 26px;
+            border: solid 1px #999a9d;
+            border-radius: 5px;
+            transition: 200ms;
+            color: #000;
+            cursor: pointer;
+          }
+          .btn:hover{
+            background: #999a9d;
+            color: #fff;
+          }
+        }
+        .subtitle{
+          font-weight: 300;
+          font-size: 13;
+          color: #000;
+          margin-bottom: 25px;
+
+        }
+        .item{
+          display: flex;
+          align-items: baseline;
+          justify-content: flex-start;
+          margin-bottom: 25px;
+          .number{
+            color: #000;
+
+          }
+          .block{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-left: 10px;
+            .text{
+              display: flex;
+              justify-content: space-between;
+              margin-bottom: 10px;
+              .name{
+                color: #000;
+              }
+              .count{
+                color: #000;
+              }
+
+            }
+
+            .line{
+              height: 8px;
+              width: 100%;
+              background: #000;
+              border-radius: 10px;
+              .subline_1{
+                height: 8px;
+                width: 80%;
+                background: $blue;
+                border-radius: 10px;
+              }
+              .subline_2{
+                height: 8px;
+                width: 80%;
+                background: $red;
+                border-radius: 10px;
+              }
+              .subline_3{
+                height: 8px;
+                width: 80%;
+                background: $green;
+                border-radius: 10px;
+              }
+            }
+          }
+        }
+      }
+
+
+
+      .order_stats{
+        flex: 1;
+        margin-right: 30px;
+        padding-left: 35px;
+        padding-right: 30px;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        background: $bg-white;
+
+        .title{
+          color: #000;
+        }
+        .graph{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 30;
+          color: #000;
+          width: 100%;
+          height: 100%;
         }
       }
     }

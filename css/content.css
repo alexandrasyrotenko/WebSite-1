@@ -5,7 +5,7 @@
 
 #main .content .summary .user_status {
   flex: 1;
-  margin-left: 18px;
+  margin-left: 30px;
   margin-right: 9px;
   height: 100px;
   background: #188ae2;
@@ -98,7 +98,7 @@
 #main .content .summary .page_views {
   flex: 1;
   margin-left: 9px;
-  margin-right: 18px;
+  margin-right: 30px;
   height: 100px;
   background: #10c469;
 }
@@ -139,4 +139,268 @@
   border-radius: 10px;
   height: 5px;
   background: #fff;
+}
+
+#main .content .graph_block {
+  display: flex;
+  height: 400px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 20px;
+  margin-bottom: 18px;
+}
+
+#main .content .graph_block .visitors {
+  flex: 2;
+  margin-right: 9px;
+  background: #f2f5f8;
+  width: calc(100%);
+  padding-left: 35px;
+  padding-top: 35px;
+  padding-right: 35px;
+}
+
+#main .content .graph_block .visitors .title {
+  color: #000;
+  margin-bottom: 40px;
+}
+
+#main .content .graph_block .visitors .graph {
+  height: 280px;
+  width: 100%;
+  background: #ff5b5b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50;
+  color: #fff;
+}
+
+#main .content .graph_block .events_weather {
+  margin-left: 9px;
+  flex: 1;
+}
+
+#main .content .graph_block .events_weather .events {
+  height: 191px;
+  margin-bottom: 18px;
+  background: #f2f5f8;
+  padding-left: 36px;
+  padding-top: 30px;
+  padding-right: 36px;
+}
+
+#main .content .graph_block .events_weather .events .title {
+  color: #000;
+  font-weight: 700;
+}
+
+#main .content .graph_block .events_weather .events .item {
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: solid 1px #cbcbcc;
+}
+
+#main .content .graph_block .events_weather .events .item .text {
+  color: #000;
+}
+
+#main .content .graph_block .events_weather .events .item .number_1 {
+  display: flex;
+  justify-content: center;
+  border-radius: 3px;
+  width: 19px;
+  height: 19px;
+  background: #ff5b5b;
+}
+
+#main .content .graph_block .events_weather .events .item .number_2 {
+  display: flex;
+  justify-content: center;
+  border-radius: 3px;
+  width: 19px;
+  height: 19px;
+  background: #10c469;
+}
+
+#main .content .graph_block .events_weather .events .item_last {
+  height: 34px;
+  border-bottom: solid 1px #000;
+}
+
+#main .content .graph_block .events_weather .events .item_last .text {
+  color: #cbcbcc;
+}
+
+#main .content .graph_block .events_weather .weather {
+  height: 191px;
+  background: #188ae2;
+  padding-left: 36px;
+  padding-right: 31px;
+  padding-top: 30px;
+}
+
+#main .content .graph_block .events_weather .weather .icon {
+  font-size: 30;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#main .content .graph_block .events_weather .weather .day {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#main .content .graph_block .events_weather .weather .date {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#main .content .graph_block .events_weather .weather .temperature {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 20;
+  margin-top: 30px;
+}
+
+#main .content .graph_block .events_weather .weather .city {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#main .content .top_stores_order_stats {
+  display: flex;
+  height: 300px;
+  margin-bottom: 18px;
+}
+
+#main .content .top_stores_order_stats .top_stores {
+  flex: 1;
+  margin-left: 30px;
+  margin-right: 18px;
+  background: #f2f5f8;
+  padding-left: 35px;
+  padding-right: 31px;
+  padding-top: 30px;
+}
+
+#main .content .top_stores_order_stats .top_stores .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#main .content .top_stores_order_stats .top_stores .title .text {
+  color: #000;
+}
+
+#main .content .top_stores_order_stats .top_stores .title .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 69px;
+  height: 26px;
+  border: solid 1px #999a9d;
+  border-radius: 5px;
+  transition: 200ms;
+  color: #000;
+  cursor: pointer;
+}
+
+#main .content .top_stores_order_stats .top_stores .title .btn:hover {
+  background: #999a9d;
+  color: #fff;
+}
+
+#main .content .top_stores_order_stats .top_stores .subtitle {
+  font-weight: 300;
+  font-size: 13;
+  color: #000;
+  margin-bottom: 25px;
+}
+
+#main .content .top_stores_order_stats .top_stores .item {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  margin-bottom: 25px;
+}
+
+#main .content .top_stores_order_stats .top_stores .item .number {
+  color: #000;
+}
+
+#main .content .top_stores_order_stats .top_stores .item .block {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 10px;
+}
+
+#main .content .top_stores_order_stats .top_stores .item .block .text {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+#main .content .top_stores_order_stats .top_stores .item .block .text .name {
+  color: #000;
+}
+
+#main .content .top_stores_order_stats .top_stores .item .block .text .count {
+  color: #000;
+}
+
+#main .content .top_stores_order_stats .top_stores .item .block .line {
+  height: 8px;
+  width: 100%;
+  background: #000;
+  border-radius: 10px;
+}
+
+#main .content .top_stores_order_stats .top_stores .item .block .line .subline_1 {
+  height: 8px;
+  width: 80%;
+  background: #188ae2;
+  border-radius: 10px;
+}
+
+#main .content .top_stores_order_stats .top_stores .item .block .line .subline_2 {
+  height: 8px;
+  width: 80%;
+  background: #ff5b5b;
+  border-radius: 10px;
+}
+
+#main .content .top_stores_order_stats .top_stores .item .block .line .subline_3 {
+  height: 8px;
+  width: 80%;
+  background: #10c469;
+  border-radius: 10px;
+}
+
+#main .content .top_stores_order_stats .order_stats {
+  flex: 1;
+  margin-right: 30px;
+  padding-left: 35px;
+  padding-right: 30px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  background: #f2f5f8;
+}
+
+#main .content .top_stores_order_stats .order_stats .title {
+  color: #000;
+}
+
+#main .content .top_stores_order_stats .order_stats .graph {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30;
+  color: #000;
+  width: 100%;
+  height: 100%;
 }
