@@ -433,9 +433,10 @@
   margin-top: 30px;
 }
 
-#main .content .comments .firt_comment .item .photo {
-  color: #000;
-  font-size: 32;
+#main .content .comments .firt_comment .item .photo embed {
+  width: 36px;
+  height: 36px;
+  border-radius: 20px;
 }
 
 #main .content .comments .firt_comment .item .text {
@@ -472,9 +473,10 @@
   margin-top: 30px;
 }
 
-#main .content .comments .last_comment .item .photo {
-  color: #000;
-  font-size: 32;
+#main .content .comments .last_comment .item .photo embed {
+  width: 36px;
+  height: 36px;
+  border-radius: 20px;
 }
 
 #main .content .comments .last_comment .item .text {

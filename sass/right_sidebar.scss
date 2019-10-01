@@ -22,9 +22,10 @@
         align-items: center;
         margin-bottom: 22px;
 
-        .photo{
-          font-size: 34;
-          color: #000;
+        .photo embed{
+          width: 36px;
+          height: 36px;
+          border-radius: 20px;
         }
 
         .information{
@@ -62,9 +63,10 @@
           align-items: center;
           margin-bottom: 22px;
 
-          .photo{
-            font-size: 34;
-            color: #000;
+          .photo embed{
+            width: 36px;
+            height: 36px;
+            border-radius: 20px;
           }
 
           .information{

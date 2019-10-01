@@ -298,6 +298,27 @@ input::-webkit-input-placeholder {
 #head .information .alarm{
   font-size: 25;
   transform: translateY(3px);
+  cursor: pointer;
+}
+
+#head .information .alarm i .circle{
+  width: 18px;
+  height: 18px;
+  border-radius: 20px;
+  background: #f00;
+  position: relative;
+  right: -15px;
+  top: -30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 11;
+}
+
+#head .information .photo embed{
+  width: 36px;
+  height: 36px;
+  border-radius: 20px;
 }
 
 
